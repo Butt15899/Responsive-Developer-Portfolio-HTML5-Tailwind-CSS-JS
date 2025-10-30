@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Butt.99 | Portfolio</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    .dark-mode {
+      background-color: #111827;
+      color: #e5e7eb;
+    }
+
+    .project-card {
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 bg-white dark:bg-gray-900 shadow-md z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-blue-600">Butt.99</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-blue-500">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+      <button id="modeToggle" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">Dark Mode</button>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-6xl mx-auto text-center py-16 px-4">
+    <h2 class="text-3xl font-bold mb-6 text-blue-600">About Me</h2>
+    <img src="https://via.placeholder.com/150" alt="Profile" class="rounded-full mx-auto mb-4 shadow-lg border-4 border-blue-500">
+    <p class="max-w-xl mx-auto text-gray-600">
+      Hi! I’m <strong>Butt.99</strong>, a creative and motivated web development student who enjoys building beautiful and responsive websites.  
+      I work with HTML5, CSS3, and JavaScript to bring interactive ideas to life and constantly learn new frameworks like Tailwind CSS and React.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-gray-100 dark:bg-gray-800 py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-blue-600">My Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <div class="p-4 bg-white dark:bg-gray-700 rounded-lg shadow-md">HTML5</div>
+        <div class="p-4 bg-white dark:bg-gray-700 rounded-lg shadow-md">CSS3</div>
+        <div class="p-4 bg-white dark:bg-gray-700 rounded-lg shadow-md">JavaScript</div>
+        <div class="p-4 bg-white dark:bg-gray-700 rounded-lg shadow-md">Tailwind CSS</div>
+        <div class="p-4 bg-white dark:bg-gray-700 rounded-lg shadow-md">Bootstrap</div>
+        <div class="p-4 bg-white dark:bg-gray-700 rounded-lg shadow-md">React (Basics)</div>
+        <div class="p-4 bg-white dark:bg-gray-700 rounded-lg shadow-md">Git & GitHub</div>
+        <div class="p-4 bg-white dark:bg-gray-700 rounded-lg shadow-md">Responsive Design</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-6xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold text-center mb-10 text-blue-600">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="project-card bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">A responsive portfolio showcasing my profile, skills, and projects.</p>
+        <a href="#" class="text-blue-500 hover:underline">View Project</a>
+      </div>
+
+      <div class="project-card bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold mb-2">To-Do App</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">A JavaScript-based app to add, remove, and track daily tasks.</p>
+        <a href="#" class="text-blue-500 hover:underline">View Project</a>
+      </div>
+
+      <div class="project-card bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold mb-2">Weather Dashboard</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">A live weather app using a public API to display real-time forecasts.</p>
+        <a href="#" class="text-blue-500 hover:underline">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-100 dark:bg-gray-800 py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-blue-600">Contact Me</h2>
+      <form class="max-w-md mx-auto space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-md" required>
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-md" required>
+        <textarea placeholder="Your Message" class="w-full p-3 border rounded-md" rows="4"></textarea>
+        <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-200 dark:bg-gray-900">
+    <p>&copy; 2025 Butt.99 | All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const toggleBtn = document.getElementById('modeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.textContent = document.body.classList.contains('dark-mode')
+        ? 'Light Mode' : 'Dark Mode';
+    });
+  </script>
+</body>
+</html>
